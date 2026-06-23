@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { PokemonForm } from "./pokemon-form/pokemon-form";
 
 @Component({

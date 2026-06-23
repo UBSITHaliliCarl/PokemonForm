@@ -3,10 +3,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-app.use(corse());
+app.use(cors());
 app.use(express.json());
 
-mongoose.connect('mongodb+srv://new-user:Ehr4CXaLyJcYiEsX@pokemondb.rbpley3.mongodb.net/?appName=PokemonDB');
+mongoose.connect('mongodb+srv://new-user:SsnZQVFWl870DcwM@pokemondb.rbpley3.mongodb.net/?appName=PokemonDB');
 
 const Pokemon = mongoose.model ('Pokemon', {
     name:String,

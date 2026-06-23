@@ -19,12 +19,11 @@ export class PokemonForm {
     nature: ['', Validators.required],
   })
 
-  //Submit method for the form.
   onSubmit(){
     if(this.pokemonForm.valid) {
       this.pokemonService.savePokemon
       (this.pokemonForm.getRawValue()).subscribe(() => {
-        this.pokemonService.fetchPokemon(); //Fetches from the database
+        this.pokemonService.fetchPokemon();
         this.pokemonForm.reset();
       })
     }

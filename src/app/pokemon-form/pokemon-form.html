@@ -1,9 +1,9 @@
 <h2>Add Favourite Pokemon: </h2>
 <form [formGroup] ="pokemonForm" (ngSubmit)="onSubmit()">
-    <input type= "text"     formControlName = "name"    placeholder= "Pokemon Name">
-    <input type= "text"     formControlName = "type"    placeholder= "Pokemon Type">
-    <input type= "number"     formControlName = "level"    placeholder= "Pokemon Level">
-    <input type= "text"     formControlName = "nature"    placeholder= "Pokemon nature">
+    <input type="text" formControlName="name" placeholder="Pokemon Name">
+    <input type="text" formControlName="type" placeholder="Pokemon Type">
+    <input type="number" formControlName="level" placeholder="Pokemon Level">
+    <input type="text" formControlName="nature" placeholder="Pokemon nature">
     
     <button type="submit" [disabled]="!pokemonForm.valid">Save to Pokedex</button>
 </form>
